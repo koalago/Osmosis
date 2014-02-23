@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="Unity Tests" total="23" errors="1" failures="2" not-run="2" inconclusive="4" ignored="1" skipped="1" invalid="0" date="2014-02-01" time="20:02:03">
+<test-results name="Unity Tests" total="23" errors="1" failures="2" not-run="2" inconclusive="4" ignored="1" skipped="1" invalid="0" date="2014-02-23" time="08:50:15">
   <environment nunit-version="2.6.2-Unity" clr-version="2.0.50727.1433" os-version="Unix 13.0.0.0" platform="Unix" cwd="/Users/greg/Desktop/Osmosis" machine-name="gregs-mbp.lan" user="greg" user-domain="gregs-mbp.lan" />
   <culture-info current-culture="" current-uiculture="" />
-  <test-suite name="Unit Tests" type="Assembly" executed="True" result="Failure" success="False" time="0.416">
+  <test-suite name="Unit Tests" type="Assembly" executed="True" result="Failure" success="False" time="0.453">
     <results>
-      <test-case name="JavaScriptUnitTests.JavaScriptTest" executed="True" result="Success" success="True" time="0.013">
+      <test-case name="JavaScriptUnitTests.JavaScriptTest" executed="True" result="Success" success="True" time="0.012">
         <reason>
           <message>
           </message>
         </reason>
       </test-case>
-      <test-case name="UnityTest.BooUnitTests.BooTest" executed="True" result="Success" success="True" time="0.001">
+      <test-case name="UnityTest.BooUnitTests.BooTest" executed="True" result="Success" success="True" time="0.000">
         <reason>
           <message>
           </message>
         </reason>
       </test-case>
-      <test-case name="UnitTest.CellTest.Damage" executed="True" result="Success" success="True" time="0.010">
+      <test-case name="UnitTest.CellTest.Damage" executed="True" result="Success" success="True" time="0.011">
       </test-case>
-      <test-case name="UnitTest.CellTest.Kill" executed="True" result="Success" success="True" time="0.006">
+      <test-case name="UnitTest.CellTest.Kill" executed="True" result="Success" success="True" time="0.007">
         <reason>
           <message>
           </message>
         </reason>
       </test-case>
-      <test-case name="UnityTest.NSubstituteDemo.RegisteredEventListenersGetEvents" executed="True" result="Success" success="True" time="0.169">
+      <test-case name="UnityTest.NSubstituteDemo.RegisteredEventListenersGetEvents" executed="True" result="Success" success="True" time="0.207">
       </test-case>
       <test-case name="UnityTest.SampleTests.CultureSpecificTest" executed="True" result="Skipped" success="False" time="0.000">
         <reason>
@@ -94,7 +94,7 @@
           </message>
         </reason>
       </test-case>
-      <test-case name="UnityTest.SampleTests.RangeTest(1)" executed="True" result="Success" success="True" time="0.001">
+      <test-case name="UnityTest.SampleTests.RangeTest(1)" executed="True" result="Success" success="True" time="0.000">
         <reason>
           <message>
           </message>
