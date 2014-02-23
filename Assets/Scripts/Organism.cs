@@ -41,16 +41,24 @@ public class Organism : MonoBehaviour
 	public void Move(Vector2 direction)
 	{
 		Vector2 newPush = Vector2.zero;
+		Vector2 newTorque = Vector2.zero;
+
 		foreach (Cell cell in cells)
 		{
 			if (cell.abbility != null && cell.abbility.GetType() == typeof(Propulsor) )
 			{
 				Propulsor propulsor = (Propulsor)cell.abbility;
+
+				//move
+
 				newPush += new Vector2(direction.x * propulsor.power, direction.y * propulsor.power);
+			
+				//rotate
+				
 			}
 		}
 
-		rigidbody2D.velocity += newPush;
+		rigidbody2D.AddForce(newPush);
 	}
 
 
