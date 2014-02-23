@@ -42,22 +42,18 @@ public class Organism : MonoBehaviour
 	{
 		Vector2 newPush = Vector2.zero;
 
-
 		foreach (Cell cell in cells)
 		{
 			if (cell.abbility != null && cell.abbility.GetType() == typeof(Propulsor) )
 			{
 				Propulsor propulsor = (Propulsor)cell.abbility;
-
 				//move
 				newPush += new Vector2(direction.x * propulsor.power, direction.y * propulsor.power);
-			
 			}
 		}
-
 		rigidbody2D.AddForce(newPush);
 
-		transform.rotation = Quaternion.LookRotation(transform.forward, rigidbody2D.velocity);
+		transform.rotation = Quaternion.LookRotation(transform.forward, direction);
 	}
 
 
