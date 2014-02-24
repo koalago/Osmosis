@@ -41,6 +41,7 @@ public class Organism : MonoBehaviour
 	public void Move(Vector2 direction)
 	{
 		Vector2 newPush = Vector2.zero;
+		float maxVelocity = 0;
 
 		foreach (Cell cell in cells)
 		{
@@ -48,10 +49,13 @@ public class Organism : MonoBehaviour
 			{
 				Propulsor propulsor = (Propulsor)cell.abbility;
 				//move
+				maxVelocity += propulsor.power;
 				newPush += new Vector2(direction.x * propulsor.power, direction.y * propulsor.power);
 			}
 		}
+
 		rigidbody2D.AddForce(newPush);
+		rigidbody2D.velocity = Vector2.ClampMagnitude(rigidbody2D.velocity, maxVelocity * 0.02f);
 
 		transform.rotation = Quaternion.LookRotation(transform.forward, direction);
 	}
