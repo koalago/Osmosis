@@ -26,12 +26,18 @@ public class Propulsor : Ability
 	}
 
 
-	Vector2 Push (Vector2 direction)
+	public Vector2 GetPush (Vector2 direction)
 	{
-		return (direction * power);
+		propulsion = (direction * power);
+		return propulsion;
 	}
 
 
+	public void Deactivate()
+	{
+
+		propulsion = Vector2.zero;
+	}
 
 
 }

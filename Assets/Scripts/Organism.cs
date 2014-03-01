@@ -23,6 +23,8 @@ public class Organism : MonoBehaviour
 		}
 
 	}
+	private Quaternion forwardRotation;
+	public float rotationSpeed;
 
 
 	void Start()
@@ -50,14 +52,40 @@ public class Organism : MonoBehaviour
 				Propulsor propulsor = (Propulsor)cell.abbility;
 				//move
 				maxVelocity += propulsor.power;
-				newPush += new Vector2(direction.x * propulsor.power, direction.y * propulsor.power);
+				newPush += propulsor.GetPush(direction);
 			}
 		}
 
 		rigidbody2D.AddForce(newPush);
-		rigidbody2D.velocity = Vector2.ClampMagnitude(rigidbody2D.velocity, maxVelocity * 0.02f);
+		rigidbody2D.velocity = Vector2.ClampMagnitude(rigidbody2D.velocity, maxVelocity * 0.05f);
 
-		transform.rotation = Quaternion.LookRotation(transform.forward, direction);
+		forwardRotation = Quaternion.LookRotation(transform.forward, direction);
+	}
+
+
+
+	public void Deactivate()
+	{
+		foreach (Cell cell in cells)
+		{
+			if (cell.abbility != null && cell.abbility.GetType() == typeof(Propulsor) )
+			{
+				Propulsor propulsor = (Propulsor)cell.abbility;
+				propulsor.Deactivate();
+			}
+		}
+
+	}
+
+
+
+
+	void Update()
+	{
+		float step = (rotationSpeed * Time.deltaTime) / Time.deltaTime;;
+		transform.rotation = Quaternion.RotateTowards(transform.rotation, forwardRotation, step);
+		
+		
 	}
 
 
