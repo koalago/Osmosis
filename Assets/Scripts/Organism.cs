@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 
+
 [RequireComponent(typeof(Rigidbody2D))]
 
 
@@ -33,6 +34,9 @@ public class Organism : MonoBehaviour
 	}
 
 
+
+
+
 	public void SetCells()
 	{
 		cells = GetComponentsInChildren<Cell>().ToList();
@@ -57,7 +61,7 @@ public class Organism : MonoBehaviour
 		}
 
 		rigidbody2D.AddForce(newPush);
-		rigidbody2D.velocity = Vector2.ClampMagnitude(rigidbody2D.velocity, maxVelocity * 0.05f);
+
 
 		forwardRotation = Quaternion.LookRotation(transform.forward, direction);
 	}

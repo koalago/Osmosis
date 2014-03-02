@@ -52,10 +52,12 @@
      <Compile Include="Assets\Scripts\CellUI.cs" />
      <Compile Include="Assets\Scripts\Interfaces\IDamagable.cs" />
      <Compile Include="Assets\Scripts\Interfaces\IKillable.cs" />
+     <Compile Include="Assets\Scripts\Matrix.cs" />
      <Compile Include="Assets\Scripts\Organism.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Propulsor.cs" />
      <Compile Include="Assets\Scripts\PropulsorUI.cs" />
+     <Compile Include="Assets\Scripts\Vision.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponent.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponentExt.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\AssertionException.cs" />
