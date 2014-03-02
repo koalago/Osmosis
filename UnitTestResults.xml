@@ -1,17 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="Unity Tests" total="26" errors="1" failures="2" not-run="2" inconclusive="4" ignored="1" skipped="1" invalid="0" date="2014-03-02" time="08:38:17">
+<test-results name="Unity Tests" total="27" errors="1" failures="2" not-run="2" inconclusive="4" ignored="1" skipped="1" invalid="0" date="2014-03-02" time="09:41:39">
   <environment nunit-version="2.6.2-Unity" clr-version="2.0.50727.1433" os-version="Unix 13.0.0.0" platform="Unix" cwd="/Users/greg/Desktop/Osmosis" machine-name="gregs-mbp.lan" user="greg" user-domain="gregs-mbp.lan" />
   <culture-info current-culture="" current-uiculture="" />
-  <test-suite name="Unit Tests" type="Assembly" executed="True" result="Failure" success="False" time="0.470">
+  <test-suite name="Unit Tests" type="Assembly" executed="True" result="Failure" success="False" time="0.444">
     <results>
       <test-case name="JavaScriptUnitTests.JavaScriptTest" executed="True" result="Success" success="True" time="0.012">
-        <reason>
-          <message>
-          </message>
-        </reason>
-      </test-case>
-      <test-case name="UnityTest.BooUnitTests.BooTest" executed="True" result="Success" success="True" time="0.001">
         <reason>
           <message>
           </message>
@@ -29,7 +23,7 @@
           </message>
         </reason>
       </test-case>
-      <test-case name="UnityTest.NSubstituteDemo.RegisteredEventListenersGetEvents" executed="True" result="Success" success="True" time="0.204">
+      <test-case name="UnityTest.NSubstituteDemo.RegisteredEventListenersGetEvents" executed="True" result="Success" success="True" time="0.173">
         <reason>
           <message>
           </message>
@@ -53,7 +47,7 @@
           </stack-trace>
         </failure>
       </test-case>
-      <test-case name="UnityTest.SampleTests.ExpectedExceptionTest" executed="True" result="Success" success="True" time="0.002">
+      <test-case name="UnityTest.SampleTests.ExpectedExceptionTest" executed="True" result="Success" success="True" time="0.001">
         <reason>
           <message>
           </message>
@@ -100,7 +94,7 @@
           </message>
         </reason>
       </test-case>
-      <test-case name="UnityTest.SampleTests.PassingTest" executed="True" result="Success" success="True" time="0.001">
+      <test-case name="UnityTest.SampleTests.PassingTest" executed="True" result="Success" success="True" time="0.000">
         <reason>
           <message>
           </message>
@@ -130,7 +124,7 @@
           </message>
         </reason>
       </test-case>
-      <test-case name="UnityTest.SampleTests.SlowTest" executed="True" result="Failure" success="False" time="0.202">
+      <test-case name="UnityTest.SampleTests.SlowTest" executed="True" result="Failure" success="False" time="0.201">
         <failure>
           <message>
 <![CDATA[Elapsed time of 201ms exceeds maximum of 100ms]]>
@@ -139,7 +133,7 @@
           </stack-trace>
         </failure>
       </test-case>
-      <test-case name="UnityTest.SampleTests.SquareRootDefinition(0.0d)" executed="True" result="Success" success="True" time="0.004">
+      <test-case name="UnityTest.SampleTests.SquareRootDefinition(0.0d)" executed="True" result="Success" success="True" time="0.010">
         <reason>
           <message>
           </message>
@@ -180,19 +174,53 @@
       </test-case>
       <test-case name="UnitTest.MatrixTest.SizeTest" executed="True" result="Success" success="True" time="0.007">
       </test-case>
-      <test-case name="UnitTest.MatrixTest.SizeNotSqareTest" executed="True" result="Success" success="True" time="0.011">
+      <test-case name="UnitTest.MatrixTest.SizeNotSqareTest" executed="True" result="Success" success="True" time="0.001">
       </test-case>
       <test-case name="UnitTest.MatrixTest.SizeSqareTest" executed="True" result="Success" success="True" time="0.001">
+      </test-case>
+      <test-case name="UnitTest.MatrixTest.TotalCountTest" executed="True" result="Success" success="True" time="0.002">
+      </test-case>
+      <test-case name="UnitTest.MatrixTest.InsertTest" executed="True" result="Success" success="True" time="0.011">
       </test-case>
     </results>
   </test-suite>
 </test-results>
-reg/Desktop/Osmosis/Assets/Scripts/Tests/Editor/MatrixTest.cs:31
+cess="True" time="0.002">
+        <reason>
+          <message>
+          </message>
+        </reason>
+      </test-case>
+      <test-case name="UnitTest.MatrixTest.InsertTest" executed="True" result="Success" success="True" time="0.011">
+      </test-case>
+    </results>
+  </test-suite>
+</test-results>
+s/Scripts/Tests/Editor/MatrixTest.cs:51
 ]]>
           </stack-trace>
         </failure>
       </test-case>
-      <test-case name="UnitTest.MatrixTest.SizeSqareTest" executed="True" result="Success" success="True" time="0.001">
+    </results>
+  </test-suite>
+</test-results>
+e/monoAndRuntimeClassLibs/build/mcs/class/corlib/System.Collections.Generic/List.cs:424
+at Matrix.Insert (System.Object obj, Vector2 cordinates) [0x00014] in /Users/greg/Desktop/Osmosis/Assets/Scripts/Matrix.cs:51
+at UnitTest.MatrixTest.InsertTest () [0x0002c] in /Users/greg/Desktop/Osmosis/Assets/Scripts/Tests/Editor/MatrixTest.cs:49
+]]>
+          </stack-trace>
+        </failure>
+      </test-case>
+    </results>
+  </test-suite>
+</test-results>
+t-suite>
+</test-results>
+x00000] in /Users/greg/Desktop/Osmosis/Assets/Scripts/Matrix.cs:48
+at UnitTest.MatrixTest.InsertTest () [0x0002c] in /Users/greg/Desktop/Osmosis/Assets/Scripts/Tests/Editor/MatrixTest.cs:49
+]]>
+          </stack-trace>
+        </failure>
       </test-case>
     </results>
   </test-suite>

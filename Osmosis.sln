@@ -5,8 +5,6 @@ Project("{EFA809A3-A838-4558-D3F9-CE093B6CFD2B}") = "Osmosis", "Assembly-CSharp.
 EndProject
 Project("{EFA809A3-A838-4558-D3F9-CE093B6CFD2B}") = "Osmosis", "Assembly-CSharp-Editor.csproj", "{5DE22659-1B73-0E31-A867-7A3522AA04E4}"
 EndProject
-Project("{EFA809A3-A838-4558-D3F9-CE093B6CFD2B}") = "Osmosis", "Assembly-Boo-Editor.booproj", "{9873B3A8-BA43-BE16-C64C-D95086A712BA}"
-EndProject
 Project("{EFA809A3-A838-4558-D3F9-CE093B6CFD2B}") = "Osmosis", "Assembly-UnityScript.unityproj", "{B2855888-971E-D170-66F6-A280C53B2700}"
 EndProject
 Project("{EFA809A3-A838-4558-D3F9-CE093B6CFD2B}") = "Osmosis", "Assembly-UnityScript-Editor.unityproj", "{A26D2216-F3C0-BCF3-C521-7DDDE8C48CF8}"
@@ -25,10 +23,6 @@ Global
 		{5DE22659-1B73-0E31-A867-7A3522AA04E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DE22659-1B73-0E31-A867-7A3522AA04E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DE22659-1B73-0E31-A867-7A3522AA04E4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9873B3A8-BA43-BE16-C64C-D95086A712BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9873B3A8-BA43-BE16-C64C-D95086A712BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9873B3A8-BA43-BE16-C64C-D95086A712BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9873B3A8-BA43-BE16-C64C-D95086A712BA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B2855888-971E-D170-66F6-A280C53B2700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B2855888-971E-D170-66F6-A280C53B2700}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2855888-971E-D170-66F6-A280C53B2700}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,7 +35,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																							GlobalSection(MonoDevelopProperties) = preSolution
+																																																								GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

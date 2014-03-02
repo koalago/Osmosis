@@ -30,6 +30,36 @@ namespace UnitTest
 			Matrix matrix = new Matrix(new Vector2(2,3));
 			Assert.IsFalse(matrix.isSquare());
 		}
+
+
+		[Test]
+		public void TotalCountTest()
+		{
+			Matrix matrix = new Matrix(new Vector2(2,3));
+			Assert.AreEqual(matrix.TotalCount(), 6);
+		}
+
+
+		[Test]
+		public void InsertTest()
+		{
+			Matrix matrix = new Matrix(new Vector2(3, 4));
+			string testString = "test";
+			Vector2 cordinates = new Vector2(2,3);
+			matrix.Insert(testString, cordinates);
+			Assert.AreSame(matrix.Get(cordinates), (string)testString);
+		}
+
+
+
+
+
+
 	}
+
+
+
+
+
 
 }
