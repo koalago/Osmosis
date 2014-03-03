@@ -4,13 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 
 
-
 [RequireComponent(typeof(Rigidbody2D))]
 
 
 public class Organism : MonoBehaviour
 {
-
+	public Matrix matrix;
 	private List<Cell> _cells = new List<Cell>();
 	public List<Cell> cells
 	{
@@ -27,7 +26,6 @@ public class Organism : MonoBehaviour
 	private Quaternion forwardRotation;
 	public float rotationSpeed;
 
-
 	void Start()
 	{
 		SetCells();
@@ -40,6 +38,12 @@ public class Organism : MonoBehaviour
 	public void SetCells()
 	{
 		cells = GetComponentsInChildren<Cell>().ToList();
+	}
+
+
+	public Organism (Matrix cellTypesMatrix)
+	{
+
 	}
 
 
@@ -61,8 +65,6 @@ public class Organism : MonoBehaviour
 		}
 
 		rigidbody2D.AddForce(newPush);
-
-
 		forwardRotation = Quaternion.LookRotation(transform.forward, direction);
 	}
 
@@ -88,8 +90,6 @@ public class Organism : MonoBehaviour
 	{
 		float step = (rotationSpeed * Time.deltaTime) / Time.deltaTime;;
 		transform.rotation = Quaternion.RotateTowards(transform.rotation, forwardRotation, step);
-		
-		
 	}
 
 

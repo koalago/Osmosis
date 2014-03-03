@@ -54,7 +54,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 0
-  power: 100
+  power: 20
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1
