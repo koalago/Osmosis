@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Axis/Assets/Scripts/ViewManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SpriteNormal.shader">
     <Files>
-      <File FileName="../Axis/Assets/Scripts/ViewManager.cs" Line="90" Column="4" />
+      <File FileName="../Axis/Assets/Scripts/ViewManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Organism.cs" Line="41" Column="3" />
+      <File FileName="Assets/SpriteNormal.shader" Line="121" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
