@@ -144,11 +144,12 @@
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Cell.cs" />
      <Compile Include="Assets\Scripts\CellUI.cs" />
+     <Compile Include="Assets\Scripts\Helpers\Enums.cs" />
      <Compile Include="Assets\Scripts\Interfaces\IDamagable.cs" />
      <Compile Include="Assets\Scripts\Interfaces\IKillable.cs" />
      <Compile Include="Assets\Scripts\Matrix.cs" />
      <Compile Include="Assets\Scripts\Organism.cs" />
-     <Compile Include="Assets\Scripts\OrganismSpawner.cs" />
+     <Compile Include="Assets\Scripts\OrganismCreator.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Propulsor.cs" />
      <Compile Include="Assets\Scripts\PropulsorUI.cs" />

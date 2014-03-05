@@ -10,7 +10,7 @@ using System.Linq;
 public class Organism : MonoBehaviour
 {
 	public Matrix matrix;
-	private List<Cell> _cells = new List<Cell>();
+	public List<Cell> _cells = new List<Cell>();
 	public List<Cell> cells
 	{
 		get
@@ -24,14 +24,15 @@ public class Organism : MonoBehaviour
 
 	}
 	private Quaternion forwardRotation;
-	public float rotationSpeed;
+	public float rotationSpeed = 3f;
 
-	void Start()
+
+
+	void OnEnable()
 	{
+		rigidbody2D.gravityScale = 0;
 		SetCells();
 	}
-
-
 
 
 
@@ -40,11 +41,6 @@ public class Organism : MonoBehaviour
 		cells = GetComponentsInChildren<Cell>().ToList();
 	}
 
-
-	public Organism (Matrix cellTypesMatrix)
-	{
-
-	}
 
 
 

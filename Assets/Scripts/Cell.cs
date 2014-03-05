@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
 public class Cell : MonoBehaviour ,IDamagable, IKillable
 {
 
@@ -26,6 +25,7 @@ public class Cell : MonoBehaviour ,IDamagable, IKillable
 		}
 	}
 
+	public CellType type;
 	public Ability abbility;
 
 

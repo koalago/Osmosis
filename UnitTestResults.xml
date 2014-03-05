@@ -1,73 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="Unity Tests" total="7" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-03-02" time="11:12:58">
+<test-results name="Unity Tests" total="8" errors="0" failures="0" not-run="0" inconclusive="2" ignored="0" skipped="0" invalid="0" date="2014-03-05" time="19:36:59">
   <environment nunit-version="2.6.2-Unity" clr-version="2.0.50727.1433" os-version="Unix 13.0.0.0" platform="Unix" cwd="/Users/greg/Desktop/Osmosis" machine-name="gregs-mbp.lan" user="greg" user-domain="gregs-mbp.lan" />
   <culture-info current-culture="" current-uiculture="" />
-  <test-suite name="Unit Tests" type="Assembly" executed="True" result="Success" success="True" time="0.012">
+  <test-suite name="Unit Tests" type="Assembly" executed="True" result="Success" success="True" time="0.025">
     <results>
-      <test-case name="UnitTest.CellTest.Damage" executed="True" result="Success" success="True" time="0.005">
-      </test-case>
-      <test-case name="UnitTest.CellTest.Kill" executed="True" result="Success" success="True" time="0.007">
+      <test-case name="UnitTest.CellTest.Damage" executed="False" result="Inconclusive">
         <reason>
           <message>
           </message>
         </reason>
       </test-case>
-      <test-case name="UnitTest.MatrixTest.SizeTest" executed="True" result="Success" success="True" time="0.000">
-      </test-case>
-      <test-case name="UnitTest.MatrixTest.SizeNotSqareTest" executed="True" result="Success" success="True" time="0.000">
-      </test-case>
-      <test-case name="UnitTest.MatrixTest.SizeSqareTest" executed="True" result="Success" success="True" time="0.000">
-      </test-case>
-      <test-case name="UnitTest.MatrixTest.TotalCountTest" executed="True" result="Success" success="True" time="0.000">
-      </test-case>
-      <test-case name="UnitTest.MatrixTest.InsertTest" executed="True" result="Success" success="True" time="0.000">
-      </test-case>
-    </results>
-  </test-suite>
-</test-results>
-me="UnitTest.MatrixTest.TotalCountTest" executed="True" result="Success" success="True" time="0.000">
+      <test-case name="UnitTest.CellTest.Kill" executed="False" result="Inconclusive">
         <reason>
           <message>
           </message>
         </reason>
       </test-case>
-      <test-case name="UnitTest.MatrixTest.InsertTest" executed="True" result="Success" success="True" time="0.014">
+      <test-case name="UnitTest.MatrixTest.InsertTest" executed="True" result="Success" success="True" time="0.013">
+      </test-case>
+      <test-case name="UnitTest.MatrixTest.SizeNotSqareTest" executed="True" result="Success" success="True" time="0.001">
+      </test-case>
+      <test-case name="UnitTest.MatrixTest.SizeSqareTest" executed="True" result="Success" success="True" time="0.001">
+      </test-case>
+      <test-case name="UnitTest.MatrixTest.SizeTest" executed="True" result="Success" success="True" time="0.002">
+      </test-case>
+      <test-case name="UnitTest.MatrixTest.TotalCountTest" executed="True" result="Success" success="True" time="0.001">
+      </test-case>
+      <test-case name="UnitTest.MatrixTest.NumberFilledTest" executed="True" result="Success" success="True" time="0.007">
       </test-case>
     </results>
   </test-suite>
 </test-results>
-ailure>
+"UnitTest.MatrixTest.SizeNotSqareTest" executed="True" result="Success" success="True" time="0.002">
       </test-case>
-      <test-case name="UnityTest.SampleTests.ExpectedExceptionTest" executed="True" result="Success" success="True" time="0.000">
+      <test-case name="UnitTest.MatrixTest.SizeSqareTest" executed="True" result="Success" success="True" time="0.001">
       </test-case>
-      <test-case name="UnityTest.SampleTests.FailingTest" executed="True" result="Failure" success="False" time="0.000">
+      <test-case name="UnitTest.MatrixTest.SizeTest" executed="True" result="Success" success="True" time="0.007">
+      </test-case>
+      <test-case name="UnitTest.MatrixTest.TotalCountTest" executed="True" result="Success" success="True" time="0.002">
+      </test-case>
+      <test-case name="UnitTest.MatrixTest.NumberFilledTest" executed="True" result="Error" success="False" time="0.001">
         <failure>
           <message>
+<![CDATA[System.ArgumentOutOfRangeException : Argument is out of range.
+Parameter name: index]]>
           </message>
           <stack-trace>
-<![CDATA[at UnityTest.SampleTests.FailingTest () [0x00000] in /Users/greg/Desktop/Osmosis/Assets/UnityTestTools/Examples/UnitTestExamples/Editor/SampleTests.cs:32
+<![CDATA[at System.Collections.Generic.List`1[System.Collections.Generic.List`1[System.Object]].get_Item (Int32 index) [0x0000c] in /Users/builduser/buildslave/monoAndRuntimeClassLibs/build/mcs/class/corlib/System.Collections.Generic/List.cs:633
+at Matrix.Insert (System.Object obj, Vector2 cordinates) [0x00000] in /Users/greg/Desktop/Osmosis/Assets/Scripts/Matrix.cs:72
+at UnitTest.MatrixTest.NumberFilledTest () [0x00031] in /Users/greg/Desktop/Osmosis/Assets/Scripts/Tests/Editor/MatrixTest.cs:59
 ]]>
           </stack-trace>
         </failure>
       </test-case>
-      <test-case name="UnityTest.SampleTests.IgnoredTest" executed="True" result="Ignored" success="False" time="0.000">
-        <reason>
-          <message>
-<![CDATA[Ignored test]]>
-          </message>
-        </reason>
-      </test-case>
-      <test-case name="UnityTest.SampleTests.InconclusiveTest" executed="True" result="Inconclusive" success="False" time="0.000">
-        <reason>
-          <message>
-          </message>
-        </reason>
-      </test-case>
-      <test-case name="UnityTest.SampleTests.ParameterizedTest(1)" executed="True" result="Success" success="True" time="0.000">
-        <reason>
-          <message>
-          </message>
+    </results>
+  </test-suite>
+</test-results>
+         </message>
         </reason>
       </test-case>
       <test-case name="UnityTest.SampleTests.ParameterizedTest(2)" executed="True" result="Success" success="True" time="0.000">

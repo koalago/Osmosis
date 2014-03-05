@@ -1,10 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SpriteNormal.shader">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Cell.cs">
     <Files>
       <File FileName="../Axis/Assets/Scripts/ViewManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Organism.cs" Line="41" Column="3" />
-      <File FileName="Assets/SpriteNormal.shader" Line="121" Column="2" />
+      <File FileName="Assets/Scripts/Organism.cs" Line="1" Column="1" />
+      <File FileName="Assets/Shaders/SpriteNormal.shader" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CellUI.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/OrganismCreator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Cell.cs" Line="2" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

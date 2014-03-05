@@ -24,14 +24,25 @@ public class Matrix
 	
 
 	//contructor
-	public Matrix (Vector2 matrixSize)
+	public Matrix (Vector2 matrixSize, object emptyObject)
 	{
 		_size = matrixSize;
-		List<object> emptyRow = new List<object>();
+
+
 		//rows
-		for (int i=0; i<matrixSize.x; i++) emptyRow.Insert(i, null);
-		//columns
-		for (int i=0; i<matrixSize.y; i++) data.Insert(i, emptyRow);
+		for (int y=0; y<=matrixSize.y; y++)
+		{
+			List<object> emptyRow = new List<object>();
+			data.Insert(y, emptyRow);
+
+			//collumns
+			for (int x=0; x<=matrixSize.x; x++)
+			{
+				data[y].Insert(x, emptyObject);
+			}
+
+		}
+
 	}
 	
 
