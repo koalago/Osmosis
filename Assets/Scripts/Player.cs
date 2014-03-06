@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
 
 		organism = organismGO.GetComponent<Organism>();
 		organism.SetCells();
+		organism.CenterPivot();
 	}
 
 

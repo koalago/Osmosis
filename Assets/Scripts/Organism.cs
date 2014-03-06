@@ -82,6 +82,24 @@ public class Organism : MonoBehaviour
 
 
 
+	public void CenterPivot()
+	{
+		//Center pivot
+		Vector3 accumulatedPositions = Vector3.zero;
+		foreach (Cell cell in cells)
+		{
+			accumulatedPositions += cell.transform.position;
+			cell.transform.parent = null;
+		}
+		transform.position = accumulatedPositions / cells.Count;
+		foreach (Cell cell in cells) cell.transform.parent = this.transform;
+
+
+	}
+
+
+
+
 	void Update()
 	{
 		float step = (rotationSpeed * Time.deltaTime) / Time.deltaTime;;
@@ -92,3 +110,8 @@ public class Organism : MonoBehaviour
 
 
 }
+
+
+
+
+

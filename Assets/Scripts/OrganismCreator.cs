@@ -13,10 +13,6 @@ public class OrganismCreator : MonoBehaviour
 
 
 
-
-
-
-
 	public GameObject Generate(Matrix matrix)
 	{
 		Debug.Log("Generate");
@@ -61,6 +57,30 @@ public class OrganismCreator : MonoBehaviour
 
 		return cellRoot;
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
