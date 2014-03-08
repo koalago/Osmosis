@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   abbility: {fileID: 11400004}
+  weigth: .100000001
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

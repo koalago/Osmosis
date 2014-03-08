@@ -62,7 +62,7 @@ public class Matrix
 	public void Insert(object obj, Vector2 cordinates)
 	{
 		List<object> row =  data[(int)cordinates.y];
-		row.Insert((int)cordinates.x, obj);
+		row[(int)cordinates.x] = obj;
 
 	}
 

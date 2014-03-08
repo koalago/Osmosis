@@ -93,6 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   abbility: {fileID: 0}
+  weigth: .100000001
 --- !u!212 &21200002
 SpriteRenderer:
   m_ObjectHideFlags: 1

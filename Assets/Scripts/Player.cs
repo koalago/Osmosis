@@ -17,7 +17,8 @@ public class Player : MonoBehaviour
 		matrix.Insert(CellType.core, new Vector2(1,1));
 		matrix.Insert(CellType.structure, new Vector2(1,2));
 		matrix.Insert(CellType.propulsor, new Vector2(1,3));
-
+		matrix.Insert(CellType.propulsor, new Vector2(2,3));
+		matrix.Insert(CellType.propulsor, new Vector2(0,3));
 
 		GameObject organismGO = organismCreator.Generate(matrix);
 		organismGO.transform.parent = this.transform;

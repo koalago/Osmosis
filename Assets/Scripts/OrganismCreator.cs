@@ -16,7 +16,10 @@ public class OrganismCreator : MonoBehaviour
 	public GameObject Generate(Matrix matrix)
 	{
 		Debug.Log("Generate");
-		GameObject cellRoot = new GameObject("organism", new System.Type[]{ typeof(Organism)});
+		GameObject organismRoot = new GameObject("organism", new System.Type[]{ typeof(Organism)});
+		Organism organism = organismRoot.GetComponent<Organism>();
+		float targetWeigth = 0;
+
 
 		//collumns
 		for (int y=0; y<=matrix.size.y; y++)
@@ -48,14 +51,22 @@ public class OrganismCreator : MonoBehaviour
 					}
 
 
-					GameObject cell = (GameObject)Instantiate(prefab);
-					cell.transform.parent = cellRoot.transform;
-					cell.transform.localPosition = new Vector3(x * cellSize, -y * cellSize);
+					GameObject cellGO = (GameObject)Instantiate(prefab);
+					cellGO.transform.parent = organismRoot.transform;
+					cellGO.transform.localPosition = new Vector3(x * cellSize, -y * cellSize);
+
+					Cell cell = cellGO.GetComponent<Cell>();
+					targetWeigth += cell.weigth;
+
+
 				}
 			}
 		}
 
-		return cellRoot;
+		organism.rigidbody2D.drag = 1f;
+		organismRoot.rigidbody2D.mass = targetWeigth;
+
+		return organismRoot;
 	}
 
 

@@ -27,7 +27,7 @@ public class Cell : MonoBehaviour ,IDamagable, IKillable
 
 	public CellType type;
 	public Ability abbility;
-
+	public float weigth = 0.1f;
 
 
 	public void Damage(float damage)

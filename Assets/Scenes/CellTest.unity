@@ -485,7 +485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d50691bc72a824ebf8246b57e0563690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followMargin: .300000012
+  followMargin: .5
   target: {fileID: 0}
   organism: {fileID: 0}
 --- !u!1 &2023788525
