@@ -65,6 +65,8 @@ public class OrganismCreator : MonoBehaviour
 
 		organism.rigidbody2D.drag = 1f;
 		organismRoot.rigidbody2D.mass = targetWeigth;
+		organism.SetCells();
+		organism.CenterPivot();
 
 		return organismRoot;
 	}

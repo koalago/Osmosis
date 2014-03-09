@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{8C44218A-D42E-1FF2-F2D6-8A1258DAC3A0}</ProjectGuid>
+	<ProjectGuid>{CCA580E0-776B-092A-0F0E-8E11EA640703}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -152,7 +152,7 @@
      <Compile Include="Assets\Scripts\OrganismCreator.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Propulsor.cs" />
-     <Compile Include="Assets\Scripts\PropulsorUI.cs" />
+     <Compile Include="Assets\Scripts\SteamEngineUI.cs" />
      <Compile Include="Assets\Scripts\Vision.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponent.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponentExt.cs" />

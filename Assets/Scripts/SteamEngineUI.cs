@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PropulsorUI : MonoBehaviour 
+public class SteamEngineUI : MonoBehaviour 
 {
 	private ParticleSystem particles;
 	private Propulsor propulsor;

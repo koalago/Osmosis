@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 96f98e3b6c75c4d20a20159bf0c16ac1
+guid: 6a8d2ea6b064d414bb2410ea5f699949
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -24,7 +24,7 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: 0
-    aniso: 3
+    aniso: 1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -45,40 +45,40 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: boundary
+    - name: cylinder
       rect:
         serializedVersion: 2
-        x: 0
-        y: 400
-        width: 100
-        height: 100
+        x: 1
+        y: 227
+        width: 18
+        height: 28
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: cog_big
+    - name: flywheel
       rect:
         serializedVersion: 2
-        x: 106
-        y: 406
-        width: 88
-        height: 88
+        x: 22
+        y: 213
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: reactor
+    - name: bar
       rect:
         serializedVersion: 2
-        x: 203
-        y: 412
-        width: 75
-        height: 76
-      alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: boundaryFront
+        x: 66
+        y: 207
+        width: 4
+        height: 48
+      alignment: 2
+      pivot: {x: .5, y: 1}
+    - name: pipe
       rect:
         serializedVersion: 2
-        x: 0
-        y: 300
-        width: 100
-        height: 100
+        x: 72
+        y: 212
+        width: 40
+        height: 44
       alignment: 0
       pivot: {x: .5, y: .5}
   spritePackingTag: 

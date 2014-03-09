@@ -6,26 +6,28 @@ public class Player : MonoBehaviour
 	public static Vector3 inputDirection;
 	public OrganismCreator organismCreator;
 	public Organism organism;
-
+	public CameraFollow cameraFollow;
 
 
 	void Start()
 	{
-		Matrix matrix = new Matrix(new Vector2(3,4), CellType.none);
+		Matrix matrix = new Matrix(new Vector2(3,5), CellType.none);
 
 		matrix.Insert(CellType.eye, new Vector2(1,0));
 		matrix.Insert(CellType.core, new Vector2(1,1));
-		matrix.Insert(CellType.structure, new Vector2(1,2));
+		matrix.Insert(CellType.eye, new Vector2(1,2));
 		matrix.Insert(CellType.propulsor, new Vector2(1,3));
 		matrix.Insert(CellType.propulsor, new Vector2(2,3));
 		matrix.Insert(CellType.propulsor, new Vector2(0,3));
+		matrix.Insert(CellType.propulsor, new Vector2(1,4));
+		matrix.Insert(CellType.propulsor, new Vector2(2,4));
+		matrix.Insert(CellType.propulsor, new Vector2(0,4));
 
 		GameObject organismGO = organismCreator.Generate(matrix);
 		organismGO.transform.parent = this.transform;
-
+		cameraFollow.target = organismGO.transform;
+		cameraFollow.organism = organismGO.rigidbody2D;
 		organism = organismGO.GetComponent<Organism>();
-		organism.SetCells();
-		organism.CenterPivot();
 	}
 
 
