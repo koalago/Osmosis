@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   method: 0
-  style: 2
+  style: 1
   animationCurve:
     serializedVersion: 2
     m_Curve:
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   method: 0
-  style: 2
+  style: 1
   animationCurve:
     serializedVersion: 2
     m_Curve:

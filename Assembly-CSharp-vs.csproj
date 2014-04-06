@@ -140,6 +140,7 @@
      <Compile Include="Assets\Packages\NGUI\Scripts\UI\UITexture.cs" />
      <Compile Include="Assets\Packages\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\Packages\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="Assets\Scripts\AI.cs" />
      <Compile Include="Assets\Scripts\Ability.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Cell.cs" />
@@ -152,6 +153,7 @@
      <Compile Include="Assets\Scripts\OrganismCreator.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Propulsor.cs" />
+     <Compile Include="Assets\Scripts\SpawnPoint.cs" />
      <Compile Include="Assets\Scripts\SteamEngineUI.cs" />
      <Compile Include="Assets\Scripts\Vision.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponent.cs" />

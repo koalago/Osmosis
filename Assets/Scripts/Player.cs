@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
 
 			inputDirection = new Vector3(dependantDirection.x * (1f/(float)Screen.width), dependantDirection.y * (1f/(float)Screen.height));
 
-			organism.Move(-inputDirection * Time.deltaTime);
+			organism.Move(-inputDirection);
 		}
 		else if (Input.GetMouseButtonUp(0))
 		{
