@@ -391,7 +391,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1327303104}
   - {fileID: 115915962}
   m_Father: {fileID: 0}
 --- !u!1 &1268034959
@@ -515,7 +514,7 @@ Transform:
   m_LocalPosition: {x: 8.86287403, y: 12.5122948, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 825990358}
+  m_Father: {fileID: 0}
 --- !u!114 &1327303105
 MonoBehaviour:
   m_ObjectHideFlags: 0
