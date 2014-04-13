@@ -23,12 +23,13 @@ public class AI : MonoBehaviour
 	public float decisionFrequency = 1f;
 	public float lastDecision;
 	private Vector2 moveTarget = new Vector2();
-
+	private Vector2 pushVector = new Vector2();
 
 
 	void Start()
 	{
 		organism = GetComponent<Organism>();
+		moveTarget = new Vector2(1f,1f);
 	}
 
 
@@ -43,17 +44,13 @@ public class AI : MonoBehaviour
 	{
 		if (action == Action.idle)
 		{
-			if (Time.time > lastDecision + decisionFrequency)
-			{
-				lastDecision = Time.time;
+			pushVector = new Vector2(moveTarget.x - transform.localPosition.x,
+			                         moveTarget.y - transform.localPosition.y);
+		
 
-				moveTarget = new Vector2(moveTarget.x + Random.Range(-0.3f,0.3f),
-				                                   moveTarget.y + Random.Range(-0.3f, 0.3f));
-			}
 		}
+		organism.Move(pushVector.normalized);
 
-
-		organism.Move(moveTarget);
 	}
 
 
