@@ -56,7 +56,7 @@ public class Organism : MonoBehaviour
 				Propulsor propulsor = (Propulsor)cell.abbility;
 				//move
 				maxVelocity += propulsor.power;
-				newPush += propulsor.GetPush(direction * Time.deltaTime);
+				newPush = propulsor.GetPush(direction * Time.deltaTime);
 			}
 		}
 

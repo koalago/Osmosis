@@ -15,7 +15,6 @@ public class OrganismCreator : MonoBehaviour
 
 	public GameObject Generate(Matrix matrix)
 	{
-		Debug.Log("Generate");
 		GameObject organismRoot = new GameObject("organism", new System.Type[]{ typeof(Organism)});
 		Organism organism = organismRoot.GetComponent<Organism>();
 		float targetWeigth = 0;

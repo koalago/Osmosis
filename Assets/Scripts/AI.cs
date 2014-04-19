@@ -20,7 +20,7 @@ public class AI : MonoBehaviour
 		get { return _action; }
 	}
 
-	public float decisionFrequency = 1f;
+	public float decisionFrequency = 2f;
 	public float lastDecision;
 	private Vector2 moveTarget = new Vector2();
 	private Vector2 pushVector = new Vector2();
@@ -29,7 +29,7 @@ public class AI : MonoBehaviour
 	void Start()
 	{
 		organism = GetComponent<Organism>();
-		moveTarget = new Vector2(1f,1f);
+		lastDecision = Time.time;
 	}
 
 
@@ -42,6 +42,17 @@ public class AI : MonoBehaviour
 
 	void Update()
 	{
+		//decide position
+		if (lastDecision + decisionFrequency < Time.time)
+		{
+			moveTarget = transform.localPosition + new Vector3(Random.Range(-5f,5f),
+			                                                   Random.Range(-5f,5f),
+			                                                   0);
+			lastDecision = Time.time;
+		}
+
+
+
 		if (action == Action.idle)
 		{
 			pushVector = new Vector2(moveTarget.x - transform.localPosition.x,
@@ -49,7 +60,7 @@ public class AI : MonoBehaviour
 		
 
 		}
-		organism.Move(pushVector.normalized);
+		organism.Move(pushVector);
 
 	}
 

@@ -28,7 +28,7 @@ public class Propulsor : Ability
 
 	public Vector2 GetPush (Vector2 direction)
 	{
-		propulsion = (direction * power);
+		propulsion = (direction.normalized * power);
 		return propulsion;
 	}
 

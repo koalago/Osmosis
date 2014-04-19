@@ -9,7 +9,8 @@ public class SpawnPoint : MonoBehaviour {
 
 	void Start()
 	{
-		Spawn();
+		InvokeRepeating("Spawn", 0, 5f);
+		//Spawn();
 	}
 
 	void Spawn ()
